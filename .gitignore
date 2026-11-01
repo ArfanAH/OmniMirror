@@ -1,0 +1,40 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+
+# PyInstaller
+build/
+dist/
+dist-optimized/
+*.spec.bak
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Generated releases
+scrcpy-gui/release/
+
+# Backups
+scrcpy-gui-backup-*/
+scrcpy-gui/main-ui-backup.py
+scrcpy-gui/main.py.before-sndcpy
+
+# Upstream source
+upstream-scrcpy/
+
+# Bundled third-party runtime (download separately)
+scrcpy-runtime/
+
