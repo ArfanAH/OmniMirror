@@ -1,0 +1,115 @@
+name: Bug Report
+description: Report a problem or unexpected behavior in OmniMirror.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug!
+        Please provide as much detail as possible.
+
+  - type: input
+    id: version
+    attributes:
+      label: OmniMirror Version
+      description: Which version are you using?
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows Version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Android Device
+      description: Include the phone model and Android version.
+      placeholder: "OnePlus 11 - Android 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection Type
+      options:
+        - USB
+        - Wireless ADB
+        - Both
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Problem Category
+      options:
+        - Device Detection
+        - Screen Mirroring
+        - Audio Forwarding
+        - Wireless Connection
+        - Application Crash
+        - Settings
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: Explain what happened.
+      placeholder: Describe the problem...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Open OmniMirror.
+        2. Connect your phone.
+        3. Start mirroring.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Message or Logs
+      description: Paste relevant error messages or attach screenshots.
+      placeholder: Paste logs here (optional).
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked that this bug has not already been reported.
+          required: true
